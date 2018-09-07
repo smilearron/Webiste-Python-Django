@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html> -->
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Sail Lab Webpage{% endblock %}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/index_css.css" %}">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet"> -->
+
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script> -->
+
+
+    <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/pin.css" %}" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="{% static "jquery-3.3.1.min.js" %}"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  {% block script %}
+  {% endblock %}
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #66ccff" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#menu" style="height: 40px;">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-left" href="/"><img id="logoImg" alt="Brand" style="max-width:150px;margin-top:20px;" src="{% static "images/website/logo2.png" %}"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="menu">
+            <!-- <div class="search-and-signup-button white pull-right hidden-md hidden-sm hidden-xs">
+              <button data-toggle="collapse" data-target="#search-form-switcher"><i class="fa fa-search"></i></button>
+            </div> -->
+            <ul id="nav" class="nav navbar-nav navbar-left">
+              <li class="active"><a href="/">home</a></li>
+              <li><a href="/#news">News</a></li>
+              <li><a href="/#member">Member</a></li>
+              <li><a href="/#projects">Project</a></li>
+              <li><a href="/publications">Publication</a></li>
+              <li><a href="/course">Curricula</a></li>
+              <li class="dropdown">
+                <a id="opening" class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Opening<b class="caret"></b></a>
+                <!-- style="margin-top:29px;background-image:url('images/navImg.png')" -->
+                <ul class="dropdown-menu" id="dropdown">
+                  <!-- background-color:#6495ED; -->
+                  <!-- style="margin-left:-20px;margin-right:10px;margin-top:-10px;margin-bottom:-10px;" -->
+                  <li><a id="dropdown-li" href="/students">Perspective Students</a></li>
+                  <!-- style="margin-left:-20px;margin-right:10px;margin-top:-10px;margin-bottom:-10px;" -->
+                  <li><a id="dropdown-li" href="/opportunities">K12 Opportunities</a></li>
+                </ul>
+              </li>
+              <li><a href="/#partners">Partners</a></li>
+              <li><a href="/#contact">Contact</a></li>
+            </ul>
+            <!--has-feedback样式/反馈控制/ form-control-feedback 增加这两个样式后，span代表的放大镜就可以放在搜索栏里面-->
+            <!-- <form id="search" action="#" class="navbar-form navbar-right hidden-md hidden-sm" role="search"  style="">
+              <div class="form-group has-feedback" style="margin-top:10px;">
+
+                <label for="search" class="sr-only">Search Keywords</label>
+                <input type="search" placeholder="Please Enter" id="search" class="form-control">
+                <span class="glyphicon glyphicon-search  form-control-feedback"></span>
+              </div>
+            </form> -->
+
+
+          </div>
+
+        </div>
+    </nav>
+
+    {% block body_block %}
+    {% endblock %}
+
+
+    <div class="footer ">
+      <!-- <div class="container">
+          <div class="row footer-top">
+              <div class="col-sm-6 col-lg-6">
+                  <h4></h4>
+                  <p>欢迎你加入，这里有你想要的.</p>
+              </div>
+              <div class="col-sm-6  col-lg-5 col-lg-offset-1">
+                  <div class="row about">
+                      <div class="col-xs-3">
+                          <h4>关于</h4>
+                          <ul class="list-unstyled">
+                              <li>
+                                  <a href="">关于我们</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-xs-3">
+                          <h4>联系方式</h4>
+                          <ul class="list-unstyled">
+                              <li>
+                                  <a target="_blank" title="云梦网官方微博" href="">新浪微博</a>
+                              </li>
+                              <li>
+                                  <a href="">电子邮件</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+              </div>
+          </div> -->
+          <hr>
+          <div class="row footer-bottom">
+              <ul class="list-inline text-center">
+                  <li>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Huiyi Cao and Jianian Zheng</li>
+              </ul>
+          </div>
+      </div>
+
+  </body>
+</html>

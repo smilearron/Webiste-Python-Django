@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans');
+
+
+/* menu navbar */
+
+.div-inline{
+  display:inline
+}
+
+img#logoImg{
+  margin-left: 10px;
+    /* max-width: 15%; */
+    max-height: 20px;
+    margin-right: 20px;
+}
+
+
+ul#nav{
+  list-style-type: none;
+  margin-bottom: -10px;
+  padding: 0;
+  overflow: visible;
+  float: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar-header {
+    position: relative;
+    z-index: 9999;
+}
+.is-sticky .navbar-header {
+    margin-top: -2px;
+}
+
+ul#nav li a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px 0px 0px 0px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+
+ul#nav li a:hover{
+    /* color:#C0C0C0; */
+    color:#000000;
+}
+
+ul#nav li{
+  /* float: left; */
+  /* display: inline-block; */
+  margin-left: 30px;
+}
+
+li#dropli a{
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1px;
+}
+
+/* slide part */
+.font20{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.font25{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 25px;
+}
+
+.slideImg{
+  max-height: 380px;
+}
+
+.slideImgCourse{
+  max-height: 400px;
+}
+
+
+.carousel-control.left {
+
+  background-image:none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+
+  background-image:none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+/* font style */
+.font14{
+  font-size:14px;
+  font-family:'times new roman',times,serif;
+}
+.font18{
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+}
+.font18bold{
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+  font-weight: 700;
+}
+.font18red{
+  color: red;
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+}
+.font18green{
+  color: green;
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+}
+.font18blue{
+  color: blue;
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+}
+.font18yellow{
+  color: 	#DAA520;
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+}
+
+@media (min-width: 768px) {
+  #dropdown{
+    margin-top:20px;
+    background-color: #66ccff;
+  }
+  #dropdown-li{
+    margin-left:-20px;
+    margin-right:10px;
+    margin-top:-10px;
+    margin-bottom:-10px;
+  }
+}
+
+
+#scrollBox{
+width: 100%;
+height:250px;
+overflow:hidden;
+margin: 0;
+padding: 0;
+    }
+#scrollBox ul{
+    height:250px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+#scrollBox ul li{
+    height:50px;
+    width: 100%;
+    text-align:left;
+    font-size:13px;
+    /* line-height:18px; */
+    margin: 0;
+    padding: 0;
+    }
+#scrollBox ul li a{
+    text-decoration:none;
+    /* color:#f60; */
+    }
+#scrollBox ul li a:hover{
+        /* color:#000; */
+        font-size:smaller;
+}
+
+container.no-margin{
+margin:0 ! important;
+padding: 0! important
+}
+
+/*解决锚点的偏移问题*/
+:target{
+  padding-top:64px;
+}
